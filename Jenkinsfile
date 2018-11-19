@@ -18,7 +18,7 @@ node{
     sh 'git config user.password "Mistri521"'
     sh 'git add --all'
     //sh 'git commit --author="ahkhawer <ahjavediqbal@gmail.com>" -m "Jenkinfile commit"'
-    sh 'git push https://ahjavediqbal@gmail.com:Mistri521@github.com/ahkhawer/MyJenTest.git origin deploy-branch'
+    sh 'git push https://ahjavediqbal@gmail.com:Mistri521@github.com/ahkhawer/MyJenTest.git origin master'
     echo 'Code is deployed to the branch'
   }
 }
