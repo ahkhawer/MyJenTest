@@ -1,10 +1,5 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'echo builing..'
-            }
-        }
-    }
+node{
+  stage('Build'){
+    echo "Hello! Building form file"
+  }
 }
