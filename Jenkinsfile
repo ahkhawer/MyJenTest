@@ -13,7 +13,7 @@ node{
   stage('Deploy'){
     echo "Deploying"
     sh 'git checkout deploy-branch'
-    sh 'git merge master'
+    sh 'git merge origin/master'
     sh 'git push origin deploy-branch'
     echo 'Code is deployed to the branch'
   }
