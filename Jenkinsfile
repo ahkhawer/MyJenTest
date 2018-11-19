@@ -14,7 +14,7 @@ node{
     echo "Deploying"
     sh 'git checkout deploy-branch'
     sh 'git merge origin/master'
-    sh 'git push origin deploy-branch'
+    sh 'git push http://ahkhawer:Mistri521@github.com/ahkhawer/MyJenTest.git origin deploy-branch'
     echo 'Code is deployed to the branch'
   }
 }
