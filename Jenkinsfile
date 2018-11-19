@@ -1,11 +1,11 @@
 node{
   stage('Build'){
     echo "Hello! Building form file"
-    sh 'javac MainClass.java'
+    sh 'javac MyJenTest\MainClass.java'
   }
 
   stage('Test'){
     echo "Testing"
-    sh 'java MainClass'
+    sh 'java MyJenTest\MainClass'
   }
 }
