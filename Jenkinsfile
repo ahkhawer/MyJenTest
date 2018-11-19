@@ -7,6 +7,6 @@ node{
 
   stage('Test'){
     echo "Testing"
-    sh 'MainClass'
+    sh 'java MainClass'
   }
 }
