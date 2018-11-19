@@ -1,7 +1,7 @@
 node{
   stage('Build'){
     echo "Hello! Building form file"
-    sh 'ls'
+    sh 'cd /Users/ahmad/Desktop/Hello_Jenkins/MyJenTest'
     sh 'javac MainClass.java'
   }
 
