@@ -12,6 +12,8 @@ node{
 
   stage('Deploy'){
     echo "Deploying"
+    sh 'git add --all'
+    sh 'git push origin master'
     sh 'git checkout deploy-branch-three'
     sh 'git config user.name "ahkhawer"'
     sh 'git config user.password "Mistri521"'
