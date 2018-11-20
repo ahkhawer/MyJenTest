@@ -12,7 +12,7 @@ node{
 
   stage('Deploy'){
     echo "Deploying"
-    sh 'git checkout -b deploy-branch-three'
+    sh 'git checkout deploy-branch-three'
     sh 'git config user.name "ahkhawer"'
     sh 'git config user.password "Mistri521"'
     sh 'git add --all'
