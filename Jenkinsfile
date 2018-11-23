@@ -1,16 +1,14 @@
 node{
   stage('Build'){
+    sh 'git checkout deploy-branch'
     echo "Hello! Building form file"
-    checkout scm
+    
     sh 'javac MainClass.java'
   }
 
   stage('Test'){
-    
-    echo 'Changing directory to features'
-    sh 'cd features'
-    echo 'Running lettuce command'
-    sh 'lettuce'
+    echo "Testing"
+    sh 'java MainClass'
   }
 
   stage('Deploy'){
