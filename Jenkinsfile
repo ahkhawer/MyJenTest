@@ -1,8 +1,8 @@
 node{
   stage('Build'){
-    sh 'git checkout deploy-branch'
     echo "Hello! Building form file"
-    
+    sh 'git checkout deploy-branch'
+    checkout scm
     sh 'javac MainClass.java'
   }
 
