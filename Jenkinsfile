@@ -6,14 +6,15 @@ node{
   }
 
   stage('Test'){
-    echo "Testing"
-    sh 'java MainClass'
+    
+    echo 'Changing directory to features'
+    sh 'cd features'
+    echo 'Running lettuce command'
+    sh 'lettuce'
   }
 
   stage('Deploy'){
     echo "Deploying"
-    sh 'git add --all'
-    sh 'git push origin master'
     sh 'git checkout deploy-branch-three'
     sh 'git config user.name "ahkhawer"'
     sh 'git config user.password "Mistri521"'
